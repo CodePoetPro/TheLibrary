@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --background-color : #D1CDCA;
+    --background-light-color: #ECE7E2;
+    --text-color : #766457;
+    --text-dark-color : #2E2721;
+}
+
+html,body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
