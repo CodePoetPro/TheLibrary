@@ -1,4 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 :root{
     --background-color : #D1CDCA;
     --background-light-color: #ECE7E2;
@@ -9,4 +11,6 @@
 html,body{
     background-color: var(--background-color);
     color: var(--text-color);
+    font-family: "Libre Baskerville", serif;
+    font-size: 14px;
 }
