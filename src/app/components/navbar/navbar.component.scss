@@ -2,6 +2,10 @@
 
 .navbar{
  width: 100%;
+ position: sticky;
+ top: 0px;
+ background-color: var(--background-color);
+ z-index: 1;
  &_wrapper{
     @include container;
     display: flex;

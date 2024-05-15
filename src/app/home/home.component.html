@@ -1,6 +1,12 @@
-<div>
-    <h3>Love</h3>
-    <section>
-        <book-card/>
-    </section>
-</div>
+<div *ngIf="loading; else elseBlock">fetching books...</div>
+<ng-template #elseBlock>
+    <div>
+        <h3>{{book_data.name | titlecase}}</h3>
+        <section>
+            @for (book of book_data.works; track book.key) {
+                <book-card  [data]="book"/>
+            }
+        </section>
+    </div>
+</ng-template>
+

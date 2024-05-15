@@ -1,10 +1,14 @@
 <div class="bookcard">
-    <img src="https://covers.openlibrary.org/b/isbn/0385472579-L.jpg">
+    <img [src]="['https://covers.openlibrary.org/b/id/'+data.cover_id+'-M.jpg']">
     <div class="bookcard_content">
         <div>
-            <time class="bookcard_content_date">1996</time>
-            <h5 class="bookcard_content_title">Great Book of Gaza</h5>
-            <p class="bookcard_content_author">Patrick Saint, George Royal</p>
+            <time class="bookcard_content_date">{{data.first_publish_year}}</time>
+            <h5 class="bookcard_content_title">{{data.title}}</h5>
+            <p class="bookcard_content_author">
+                @for (author of data.authors; track author.key) {
+                    {{author.name}}
+                }
+            </p>
         </div>
        
         <div class="bookcard_content_actions">

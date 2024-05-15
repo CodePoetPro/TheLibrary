@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+
+import { Work } from '../../../types';
 
 @Component({
   selector: 'book-card',
@@ -8,5 +10,5 @@ import { Component } from '@angular/core';
   styleUrl: './book-card.component.scss'
 })
 export class BookCardComponent {
-
+  @Input() data!:Work;
 }
