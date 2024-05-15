@@ -1,0 +1,21 @@
+@import '../../../theme/mixins';
+
+.navbar{
+ width: 100%;
+ &_wrapper{
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: solid 1px var(--text-color);
+ }
+ h1{
+    font-size: 20px;
+ }
+ ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+ }
+}
